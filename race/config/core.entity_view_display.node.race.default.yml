@@ -1,0 +1,39 @@
+uuid: 550cc9ea-af49-4fde-9bfd-01f4397e2d90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.race.body
+    - field.field.node.race.field_date
+    - node.type.race
+  module:
+    - datetime
+    - text
+    - user
+id: node.race.default
+targetEntityType: node
+bundle: race
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
